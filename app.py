@@ -5,13 +5,14 @@ from flask import Flask, json, request, jsonify, render_template
 import urllib.request
 from werkzeug.utils import secure_filename
 import json
+from flask_cors import CORS
 
 import pandas as pd
 import numpy as np
 import pickle
 
 import time
-import gtts
+#import gtts
 from playsound import playsound
 
 #from yesnoprediction import *
@@ -21,6 +22,7 @@ import yesnoprediction as h_model
 import emotionprediction as p_model
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 #model = pickle.load(open('model.pkl', 'rb'))
 
