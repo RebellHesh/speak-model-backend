@@ -275,5 +275,5 @@ def upload_file_praboda():
 #def sendresult(res)
 
 if __name__ == '__main__':
-    app.run(host = '192.168.8.107', port=3000, debug=False)
-    #app.run(debug=False)
+    #app.run(host = '192.168.8.107', port=3000, debug=False)
+    app.run(debug=False)
