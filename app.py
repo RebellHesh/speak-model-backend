@@ -115,7 +115,7 @@ def upload_file_praboda():
             #os.remove('emotion.mp3')
             #sound.save("emotion.mp3")
             #time.sleep(1)
-            playsound("emotion.mp3")
+            #playsound("emotion.mp3")
 
             return jsonify({'result':emotion})
 
