@@ -22,7 +22,7 @@ import yesnoprediction as h_model
 import emotionprediction as p_model
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 #model = pickle.load(open('model.pkl', 'rb'))
 
